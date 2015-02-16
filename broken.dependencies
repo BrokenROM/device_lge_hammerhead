@@ -1,0 +1,14 @@
+[
+ {
+   "remote":      "github",
+   "repository":  "BrokenOs/kernel_lge_hammerhead",
+   "target_path": "kernel/lge/hammerhead",
+   "branch":      "lp"
+ },
+ {
+   "remote":      "github",
+   "repository":  "TheMuppets/proprietary_vendor_lge",
+   "target_path": "vendor/lge",
+   "branch":      "cm-12.0"
+ }
+]
