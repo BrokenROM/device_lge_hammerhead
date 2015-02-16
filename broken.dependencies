@@ -1,7 +1,7 @@
 [
  {
    "remote":      "github",
-   "repository":  "BrokenOs/kernel_lge_hammerhead",
+   "repository":  "Crackerteg/Broken_N5",
    "target_path": "kernel/lge/hammerhead",
    "branch":      "lp"
  },
