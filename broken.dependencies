@@ -1,9 +1,9 @@
 [
  {
    "remote":      "github",
-   "repository":  "Crackerteg/Broken_N5",
+   "repository":  "Cyanogenmod/android_kernel_lge_hammerhead",
    "target_path": "kernel/lge/hammerhead",
-   "branch":      "lp"
+   "branch":      "cm-12.0"
  },
  {
    "remote":      "github",
