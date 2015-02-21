@@ -30,6 +30,10 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=hammerhea
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02900000 --tags_offset 0x02700000
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
+# Custom Toolchains
+TARGET_GCC_VERSION_AND := 4.7-linaro
+TARGET_GCC_VERSION_ARM := 4.8-linaro
+
 # Broken Optimizations
 BROKEIT := true
 
