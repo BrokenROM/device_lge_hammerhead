@@ -30,6 +30,16 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=hammerhea
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02900000 --tags_offset 0x02700000
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
+# Kernel config
+TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_KERNEL_CONFIG := broken_hammerhead_defconfig
+KERNEL_DEFCONFIG:= broken_hammerhead_defconfig
+VARIANT_DEFCONFIG:= broken_hammerhead_defconfig
+SELINUX_DEFCONFIG:= broken_hammerhead_defconfig
+
+# Broken Optimizations
+BROKEIT := true
+
 TOUCH_BOOST_DEBUG := false
 
 # Shader cache config options
@@ -109,10 +119,6 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 
 BOARD_SEPOLICY_DIRS += \
        device/lge/hammerhead/sepolicy
-
-# Define kernel config for inline building
-TARGET_KERNEL_CONFIG := broken_hammerhead_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
