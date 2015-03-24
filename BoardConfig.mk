@@ -33,9 +33,9 @@ BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 # Kernel config
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 TARGET_KERNEL_CONFIG := broken_hammerhead_defconfig
-KERNEL_DEFCONFIG:= broken_hammerhead_defconfig
-VARIANT_DEFCONFIG:= broken_hammerhead_defconfig
-SELINUX_DEFCONFIG:= broken_hammerhead_defconfig
+KERNEL_DEFCONFIG := broken_hammerhead_defconfig
+VARIANT_DEFCONFIG := broken_hammerhead_defconfig
+SELINUX_DEFCONFIG := broken_hammerhead_defconfig
 
 # Broken Optimizations
 BROKEIT := true
