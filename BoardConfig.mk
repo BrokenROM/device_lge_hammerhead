@@ -37,11 +37,6 @@ KERNEL_DEFCONFIG:= broken_hammerhead_defconfig
 VARIANT_DEFCONFIG:= broken_hammerhead_defconfig
 SELINUX_DEFCONFIG:= broken_hammerhead_defconfig
 
-# Custom Toolchains
-KERNEL_TOOLCHAIN_PREFIX:= arm-eabi-
-KERNEL_TOOLCHAIN:= "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin"
-TARGET_GCC_VERSION_AND:= arm-linux-androideabi-4.9
-
 # Broken Optimizations
 BROKEIT := true
 
