@@ -37,9 +37,6 @@ KERNEL_DEFCONFIG := broken_hammerhead_defconfig
 VARIANT_DEFCONFIG := broken_hammerhead_defconfig
 SELINUX_DEFCONFIG := broken_hammerhead_defconfig
 
-# Broken Optimizations
-BROKEIT := true
-
 TOUCH_BOOST_DEBUG := false
 
 # Shader cache config options
