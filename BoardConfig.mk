@@ -32,10 +32,10 @@ BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 # Kernel config
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
-TARGET_KERNEL_CONFIG := broken_hammerhead_defconfig
-KERNEL_DEFCONFIG := broken_hammerhead_defconfig
-VARIANT_DEFCONFIG := broken_hammerhead_defconfig
-SELINUX_DEFCONFIG := broken_hammerhead_defconfig
+TARGET_KERNEL_CONFIG := custom_hammerhead_defconfig
+KERNEL_DEFCONFIG := custom_hammerhead_defconfig
+VARIANT_DEFCONFIG := custom_hammerhead_defconfig
+SELINUX_DEFCONFIG := custom_hammerhead_defconfig
 
 TOUCH_BOOST_DEBUG := false
 
