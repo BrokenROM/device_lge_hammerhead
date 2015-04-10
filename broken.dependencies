@@ -1,7 +1,7 @@
 [
  {
    "remote":      "github",
-   "repository":  "CrackerTeg/Feculence_kernel",
+   "repository":  "CrackerTeg/Excremental",
    "target_path": "kernel/lge/hammerhead",
    "branch":      "lp5.1"
  },
