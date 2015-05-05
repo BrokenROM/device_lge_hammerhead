@@ -1,7 +1,7 @@
 [
  {
    "remote":      "github",
-   "repository":  "CrackerTeg/Excremental",
+   "repository":  "BrokenROM/kernel_lge_hammerhead",
    "target_path": "kernel/lge/hammerhead",
    "branch":      "lp5.1"
  },
