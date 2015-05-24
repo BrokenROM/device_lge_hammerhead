@@ -33,11 +33,6 @@ BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 # Kernel config
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 TARGET_KERNEL_CONFIG := custom_hammerhead_defconfig
-KERNEL_DEFCONFIG := custom_hammerhead_defconfig
-VARIANT_DEFCONFIG := custom_hammerhead_defconfig
-SELINUX_DEFCONFIG := custom_hammerhead_defconfig
-
-TOUCH_BOOST_DEBUG := false
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
@@ -117,6 +112,7 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 BOARD_SEPOLICY_DIRS += \
        device/lge/hammerhead/sepolicy
 
+
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
        app.te \
@@ -159,6 +155,7 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 
 # QCOM PowerHAL
 TARGET_POWERHAL_VARIANT := qcom
+TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/lge/hammerhead/power/power_ext.c
 
 USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
 USE_DEVICE_SPECIFIC_CAMERA:= true
@@ -178,6 +175,3 @@ USE_MINIKIN := true
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
-
-#twrp
-DEVICE_RESOLUTION := 1080x1920
