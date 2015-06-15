@@ -34,9 +34,6 @@ BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 TARGET_KERNEL_CONFIG := custom_hammerhead_defconfig
 
-# Build with compressed odex
-WITH_DEXPREOPT_COMP=true
-
 TOUCH_BOOST_DEBUG := false
 
 # Shader cache config options
