@@ -367,17 +367,6 @@ PRODUCT_COPY_FILES += \
     device/lge/hammerhead/init.hammerhead.diag.rc.user:root/init.hammerhead.diag.rc
 endif
 
-# hardware info
-ro.device.chipset=Qualcomm Snapdragon 800 MSM8974
-ro.device.cpu=2.3GHz quad-core Krait
-ro.device.gpu=Qualcomm Adreno 330
-ro.device.rear_cam=8 MP
-ro.device.front_cam=1.3 MP
-ro.device.screen_res=1080x1920
-
-# default screen density
-ro.sf.lcd_density=400
-
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
