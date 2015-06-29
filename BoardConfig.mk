@@ -36,6 +36,9 @@ TARGET_KERNEL_CONFIG := custom_hammerhead_defconfig
 
 TOUCH_BOOST_DEBUG := false
 
+# Block builds
+BLOCK_BASED_OTA=true
+
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
 # Increase the size if shaders of size greater than 12KB are used.
