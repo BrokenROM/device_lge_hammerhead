@@ -1,7 +1,7 @@
 [
  {
    "remote":      "github",
-   "repository":  "CrackerTeg/dirty_hammerhead",
+   "repository":  "CrackerTeg/dilligaf_hammerhead",
    "target_path": "kernel/lge/hammerhead",
    "branch":      "lollipop"
  },
