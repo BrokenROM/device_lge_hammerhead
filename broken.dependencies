@@ -1,9 +1,9 @@
 [
  {
    "remote":      "github",
-   "repository":  "CrackerTeg/dilligaf_hammerhead",
+   "repository":  "BrokenROM/kernel_lge_hammerhead",
    "target_path": "kernel/lge/hammerhead",
-   "branch":      "lollipop"
+   "branch":      "lp5.1"
  },
  {
    "remote":      "github",
