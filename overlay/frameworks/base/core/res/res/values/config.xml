@@ -316,4 +316,8 @@
 
     <!-- Support Blur
     <bool name="config_ui_blur_enabled">true</bool> -->
+
+    <!-- enable doze powersaving mode -->
+    <bool name="config_enableAutoPowerModes">true</bool>
+
 </resources>
