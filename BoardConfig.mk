@@ -78,6 +78,7 @@ TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOOTLOADER_BOARD_NAME := hammerhead
 TARGET_BOARD_INFO_FILE := device/lge/hammerhead/board-info.txt
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
+BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 TARGET_NO_RPC := true
 
 BOARD_EGL_CFG := device/lge/hammerhead/egl.cfg
@@ -106,6 +107,11 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 734003200
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+
+ifneq ($(filter hammerhead_fp aosp_hammerhead_fp,$(TARGET_PRODUCT)),)
+BOARD_HAS_FINGERPRINT_FPC := true
+endif
+
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 TARGET_RECOVERY_FSTAB = device/lge/hammerhead/fstab.hammerhead
@@ -114,43 +120,18 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/lge/hammerhead
 
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 
+BOARD_SEPOLICY_DIRS += device/lge/hammerhead/sepolicy
+
+ifneq ($(filter hammerhead_fp aosp_hammerhead_fp,$(TARGET_PRODUCT)),)
 BOARD_SEPOLICY_DIRS += \
-       device/lge/hammerhead/sepolicy
+       device/lge/hammerhead/sepolicy-hammerhead_fp
 
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
-       app.te \
-       bluetooth_loader.te \
-       bridge.te \
-       camera.te \
        device.te \
-       domain.te \
-       file.te \
-       healthd.te \
-       hostapd.te \
-       irsc_util.te \
-       mediaserver.te \
-       mpdecision.te \
-       netmgrd.te \
-       platform_app.te \
-       qmux.te \
-       radio.te \
-       rild.te \
-       rmt.te \
-       sensors.te \
-       ssr.te \
-       surfaceflinger.te \
-       system_app.te \
        system_server.te \
-       tee.te \
-       thermald.te \
-       time.te \
-       ueventd.te \
-       vss.te \
-       wpa.te \
-       file_contexts \
-       genfs_contexts \
-       te_macros
+       file_contexts
+endif
 
 HAVE_ADRENO_SOURCE:= false
 
