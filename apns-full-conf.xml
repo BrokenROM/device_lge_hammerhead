@@ -695,8 +695,6 @@
       mvno_type="spn"
   />
 
-<<<<<<< HEAD
-=======
   <apn carrier="HOT mobile Internet"
       mcc="204"
       mnc="04"
@@ -982,7 +980,6 @@
       mvno_type="imsi"
   />
 
->>>>>>> google/marshmallow-release
   <apn carrier="Telfort Internet"
       mcc="204"
       mnc="12"
