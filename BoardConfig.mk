@@ -122,17 +122,6 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 
 BOARD_SEPOLICY_DIRS += device/lge/hammerhead/sepolicy
 
-ifneq ($(filter hammerhead_fp aosp_hammerhead_fp,$(TARGET_PRODUCT)),)
-BOARD_SEPOLICY_DIRS += \
-       device/lge/hammerhead/sepolicy-hammerhead_fp
-
-# The list below is order dependent
-BOARD_SEPOLICY_UNION += \
-       device.te \
-       system_server.te \
-       file_contexts
-endif
-
 HAVE_ADRENO_SOURCE:= false
 
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
@@ -155,16 +144,7 @@ USE_MINIKIN := true
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
 
-#TWRP
-DEVICE_RESOLUTION := 1080x1920
-BOARD_HAS_NO_REAL_SDCARD := true
-RECOVERY_SDCARD_ON_DATA := true
-TW_NO_USB_STORAGE := false
-TW_INCLUDE_L_CRYPTO := true
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-# The real path for this is /sys/devices/mdp.0/qcom,cmdss_fb_primary.160/leds/lcd-backlight/brightness but the comma doesn't compile correctly
-TW_BRIGHTNESS_PATH := "/sys/devices/mdp.0/qcom\x2cmdss_fb_primary.160/leds/lcd-backlight/brightness"
-TW_MAX_BRIGHTNESS := 255
-TW_NO_SCREEN_TIMEOUT := true
+# Recovery
+RECOVERY_FSTAB_VERSION := 2
+BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
