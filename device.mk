@@ -174,7 +174,7 @@ PRODUCT_PACKAGES += \
 
 # Mpdecision init.d script
 PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/01mpdecision:system/etc/init.d/01mpdecision
+    device/lge/hammerhead/80mpdecision:system/etc/init.d/80mpdecision
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
