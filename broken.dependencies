@@ -3,7 +3,7 @@
    "remote":      "github",
    "repository":  "BrokenROM/kernel_lge_hammerhead",
    "target_path": "kernel/lge/hammerhead",
-   "branch":      "m6.0"
+   "branch":      "m6.0.1"
  },
  {
    "remote":      "github",
