@@ -1,6 +1,3 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/broken/config/gsm.mk)
-
 # Release name
 PRODUCT_RELEASE_NAME := hammerhead
 
