@@ -23,9 +23,9 @@ PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-   PRODUCT_NAME=hammerhead \
-   BUILD_FINGERPRINT=google/hammerhead/hammerhead:6.0.1/MMB29K/2419427:user/release-keys \
-   PRIVATE_BUILD_DESC="hammerhead-user 6.0.1 MMB29K 2419427 release-keys"
+    PRODUCT_NAME=hammerhead \
+    BUILD_FINGERPRINT=google/hammerhead/hammerhead:6.0.1/MOB30D/2704746:user/release-keys \
+    PRIVATE_BUILD_DESC="hammerhead-user 6.0.1 MOB30D 2704746 release-keys"
 
 # Broken Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
