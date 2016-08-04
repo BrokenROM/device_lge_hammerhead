@@ -38,6 +38,9 @@ KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-e
 
 TOUCH_BOOST_DEBUG := false
 
+# Enable workaround for slow rom flash
+BOARD_SUPPRESS_SECURE_ERASE := true
+
 # Block builds
 BLOCK_BASED_OTA=true
 
