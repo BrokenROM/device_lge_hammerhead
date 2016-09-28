@@ -13,6 +13,12 @@
  },
  {
    "remote":      "github",
+   "repository":  "CrackerTeg/hardware_qcom_msm8x74",
+   "target_path": "hardware/qcom/msm8x74",
+   "branch":      "n7.0"
+ },
+ {
+   "remote":      "github",
    "repository":  "BrokenROM/packages_apps_SnapdragonCamera",
    "target_path": "packages/apps/SnapdragonCamera",
    "branch":      "n7.0"
