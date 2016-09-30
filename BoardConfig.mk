@@ -45,6 +45,9 @@ BLOCK_BASED_OTA=true
 # Build with GCC
 TARGET_NEEDS_GCC_LIBC := true
 
+# PDFIUM
+TARGET_NEEDS_PDFIUM_BIGINT := true
+
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
 # Increase the size if shaders of size greater than 12KB are used.
