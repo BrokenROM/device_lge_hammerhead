@@ -387,6 +387,10 @@ ro.device.rear_cam=8 MP
 ro.device.front_cam=1.3 MP
 ro.device.screen_res=1080x1920
 
+# Telephony-ext
+PRODUCT_PACKAGES += telephony-ext
+PRODUCT_BOOT_JARS += telephony-ext
+
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/device-bcm.mk)
 
 # setup dalvik vm configs.
