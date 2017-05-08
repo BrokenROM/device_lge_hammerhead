@@ -10,7 +10,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 $(call inherit-product, vendor/broken/config/common_full_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/broken/config/nfc_enhanced.mk)
+# $(call inherit-product, vendor/broken/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
